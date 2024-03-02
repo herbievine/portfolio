@@ -9,7 +9,7 @@
     "tailwindcss": "^3.2.6"
   },
   "scripts": {
-    "serve": "./node_modules/.bin/concurrently \"npm run watch\" \"npm run start\"",
+    "dev": "./node_modules/.bin/concurrently \"npm run watch\" \"npm run start\"",
     "start": "./node_modules/.bin/http-server ./src -p 3000 -c-1",
     "watch": "npx tailwindcss -i ./src/globals.css -o ./src/build.css --watch",
     "build": "npx tailwindcss -i ./src/globals.css -o ./src/build.css --minify"
